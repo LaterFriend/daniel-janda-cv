@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/hero-img.png";
+import heroImg from "../../assets/profile_cropped.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
@@ -10,7 +10,7 @@ import CV from "../../assets/Životopis - Janda Daniel.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
-    const {theme, toggleTheme} = useTheme();
+    const { theme, toggleTheme } = useTheme();
     const themeIcon = theme === "light" ? sun : moon;
     const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
     const githubIcon = theme === "light" ? githubLight : githubDark;

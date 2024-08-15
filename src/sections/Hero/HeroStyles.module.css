@@ -21,6 +21,11 @@
 
             img {
                 width: 30px;
+                transition: all 150ms ease-in-out;
+            }
+
+            img:hover {
+                transform: scale(1.1);
             }
         }
     }
@@ -42,7 +47,6 @@
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         transition: all 150ms ease-in-out;
     }
-
 
     button:hover {
         transform: scale(1.05);
@@ -80,4 +84,26 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+}
+
+@media (width >= 800px) {
+    .container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .hero {
+            max-width: 350px;
+            width: 350px;
+        }
+    }
+}
+
+@media (width >= 1400px) {
+    .container {
+        .hero {
+            max-width: 400px;
+            width: 400px;
+        }
+    }
 }
